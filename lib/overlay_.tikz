@@ -1,0 +1,9 @@
+\begin{tikzpicture}[remember picture,overlay]
+
+% UTT Background under the title and info box
+\coordinate [right=8mm, below=10mm] (uttbackground_anchor) at (current page.north west);
+\node [name=uttsquare,anchor=north west] at (uttbackground_anchor){
+%\includegraphics[width=19.4cm]{first-page-background.png}};
+\includegraphics[width=19.4cm]{assets/sPhenix_front.JPG}};
+
+\end{tikzpicture}

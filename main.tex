@@ -1,0 +1,76 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{lib/report-template}
+\usepackage[all]{background}
+\usepackage{lipsum}
+
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+\SetBgContents{Preliminary version/1.0}% Set contents
+\SetBgPosition{-0.5cm,-5.0cm}% Select location
+\SetBgOpacity{1.0}% Select opacity
+\SetBgAngle{90.0}% Select rotation of logo
+\SetBgScale{2.0}% Select scale factor of logo
+
+
+%Line spacing
+\renewcommand{\baselinestretch}{1.5}
+
+\title{projeto ATLAS}
+
+\date{August 2019}
+
+
+\begin{document}
+
+\include{lib/frontpage}
+%\include{lib/facepage}
+\include{parts/resumo}
+\include{parts/abstract}
+
+\tableofcontents
+
+\include{parts/introducao2}
+\include{parts/objetivos}
+\include{parts/desafios_cientificos_tecnologicos}
+%\include{parts/cronograma}
+\include{parts/disseminacao}
+%\include{parts/outros_apoios}
+\newpage
+\begin{thebibliography}{9}
+
+
+
+\bibitem{ref1} B. A. et al. (ALICE Collaboration), Technical design report for the upgrade of the alice time projection chamber, CERN-LHCC-2013-020
+A886 (2013), http://cds.cern.ch/record/1622286.
+
+
+\bibitem{tpcNIM} M.M. Aggarwal, et al., Nucl. Instrum. Meth. A 903, (2018) 215–223. 
+
+\bibitem{discharge_paper} A. Deisting, et al., Nucl. Instrum. Meth. A 937, (2019) 168–180.
+
+%
+\bibitem{GSI_REPO} Garabatos C., et al., Stability test of ALICE TPC GEM chambers at the LHC, GSI FAIR SCIENTIFIC REPORT 2017, DOI:10.15120/GSI-2017-01856.
+%
+
+\bibitem{THGEM} H. Natal da Luz, et al., EPJ Web of Conferences 174, (2018) 01012.
+
+\bibitem{book1} G. Lutz, Semiconductor Radiation Detectors: Device Physics, Springer-Verlag, Berlin Heidelberg, 2007. 
+
+\bibitem{book2} H. Spieler, Semiconductor Detector Systems, Oxford University Press, Great Britain, 2005.
+
+
+\bibitem{NIM} G. G. A. de Souza and  H. Natal da Luz, Nucl. Inst. Meth. A 937, (2019) 141–147.
+
+\bibitem{xray} G.G.A. de Souza and H.N. da Luz, X-Ray Spectrometry 48, 5 (2018).
+
+\bibitem{sirius} https://www.lnls.cnpem.br/sirius/livro-projeto-sirius/
+
+
+\end{thebibliography}
+
+
+\end{document}
